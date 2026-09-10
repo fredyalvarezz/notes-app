@@ -1,0 +1,66 @@
+.note-form {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  box-shadow: var(--shadow-sm);
+}
+
+.note-form-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.note-form-input,
+.note-form-textarea,
+.note-form-select {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.85rem;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  width: 100%;
+}
+
+.note-form-textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.note-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-sm);
+  margin-top: var(--space-xs);
+}
+
+.note-form-submit {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 0.6rem 1.1rem;
+  font-weight: 600;
+  transition: opacity 0.15s ease;
+}
+
+.note-form-submit:hover {
+  opacity: 0.85;
+}
+
+.note-form-cancel {
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 0.6rem 1.1rem;
+  font-weight: 600;
+  color: var(--color-text-light);
+}
+
+.note-form-cancel:hover {
+  background-color: var(--color-background);
+}

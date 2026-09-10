@@ -1,0 +1,92 @@
+.note-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.15s ease;
+  cursor: pointer;
+}
+
+.note-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.note-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}
+
+.note-card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  word-break: break-word;
+}
+
+.note-card-category {
+  flex-shrink: 0;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--color-text-light);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+  white-space: nowrap;
+}
+
+.note-card-content {
+  color: var(--color-text);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.note-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: var(--space-xs);
+  gap: var(--space-sm);
+}
+
+.note-card-date {
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+}
+
+.note-card-actions {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.note-card-edit,
+.note-card-delete {
+  background: none;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0;
+}
+
+.note-card-edit {
+  color: var(--color-text);
+}
+
+.note-card-edit:hover {
+  text-decoration: underline;
+}
+
+.note-card-delete {
+  color: var(--color-danger);
+}
+
+.note-card-delete:hover {
+  text-decoration: underline;
+}
